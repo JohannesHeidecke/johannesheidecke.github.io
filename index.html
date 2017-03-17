@@ -1,1 +1,90 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Johannes Heidecke</title>
+	<link rel="stylesheet" href="css/tufte.css"/>
+</head>
+<body onload="deObfuscate()">
+
+<script>
+	// making life harder for spammers:
+	function deObfuscate() {
+		text = "2YlRWalhma".split("").reverse().join("");
+		text += "tlIC1bYXRdLSBnbWFpbCAtW2RvdF0tIGNvbQ==";
+		text = atob(text);
+		document.getElementById("obfuscated").innerHTML = text;
+	}
+</script>
+
+	<article>
+		
+	<section>
+		<h1>Johannes Heidecke</h1>
+		<p>
+			Graduate Student of Artificial Intelligence
+			<label for="mn-figure-1" class="margin-toggle">&#8853;</label>
+			<input type="checkbox" id="mn-figure-1" class="margin-toggle"/>
+			<span class="marginnote"><img src="img/johannes.jpg" alt="Johannes Heidecke"/></span>
+		</p>
+	</section>
+
+	<section>
+		<h2>CV:</h2>
+		<p>My curriculum vitae can be found <a href="cv/cv.pdf" target="_blank">here</a>.</p>
+	</section>
+
+	<section>
+		<h2>About Me:</h2>
+		
+		<p>I am a master degree student of <strong>Artificial Intelligence</strong> in Barcelona and currently focused on exploring state of the art techniques of AI and ML. My main research interest is AI safety - how to ensure AI systems with steadily increasing capabilities to be compatible with humanity's values and interests. One of my current interests in this field is the robustness of AI systems.</p>
+		
+		<h3>Projects:</h3>
+		
+		<p>
+			<label for="mn-projects-ci" class="margin-toggle">&#8853;</label>
+			<input type="checkbox" id="mn-projects-ci" class="margin-toggle"/>
+			<span class="marginnote">
+				<a href="https://github.com/JohannesHeidecke/UPC-MAI-CI/blob/master/Report/report.pdf" target="_blank">Report</a>
+				 and  
+				<a href="https://github.com/JohannesHeidecke/UPC-MAI-CI/tree/master/Code" target="_blank">Code</a>
+				 on GitHub
+			</span>
+			<strong>Generative Adversarial Networks:</strong> 
+			Experimenting on the capabilities of using GANs to generate additional data for supervised learning with few available training instances.  
+		</p>
+
+		<p>
+			<label for="mn-projects-bt" class="margin-toggle">&#8853;</label>
+			<input type="checkbox" id="mn-projects-bt" class="margin-toggle"/>
+			<span class="marginnote">
+				<a href="https://github.com/JohannesHeidecke/UPC-MAI-PAR/tree/master/src" target="_blank">Code</a> on GitHub
+			</span>
+			<strong>Automated Planning:</strong> Implementation of the Stanford Research Institute Problem Solver (STRIPS).
+		</p>
+
+		<p>
+			<label for="mn-projects-bt" class="margin-toggle">&#8853;</label>
+			<input type="checkbox" id="mn-projects-bt" class="margin-toggle"/>
+			<span class="marginnote">Available upon request.</span>
+			<strong>Bachelor Thesis:</strong> 
+			Anomaly Detection on Time Series Data for Predictive Maintenance. Using the restoration error of neural autoencoders to detect deviations from normal behavior of industrial time series data. 
+		</p>
+
+	</section>
+
+	<section>
+		<h2>Contact Me:</h2>
+
+		<p id="obfuscated"></p>
+		<noscript>Please turn on Javascript to see my email address.</noscript>
+
+		<p> <a href="https://github.com/JohannesHeidecke" target="_blank">Github</a> </p>
+
+		<p> <a href="https://www.linkedin.com/in/johannesheidecke" target="_blank">LinkedIn</a></p>
+
+	</section>
+
+	</article>
+
+</body>
+</html>
